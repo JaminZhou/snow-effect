@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="robot_notifications" translatesAutoresizingMaskIntoConstraints="NO" id="PVx-8Q-6Ke">
+                    <rect key="frame" x="88" y="169" width="199" height="153"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="153" id="eCW-Sm-0Qp"/>
+                        <constraint firstAttribute="width" secondItem="PVx-8Q-6Ke" secondAttribute="height" multiplier="228:175" id="sEV-72-WOE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No notifications." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7A-tl-7qV">
+                    <rect key="frame" x="126.5" y="395.5" width="122" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.23921568627450979" green="0.25098039215686274" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RI-G5-0mt">
+                    <rect key="frame" x="78.5" y="425.5" width="218" height="55"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Your lasted activity">
+                            <attributes>
+                                <color key="NSColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=",">
+                            <attributes>
+                                <color key="NSColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+game invitations and coupons will
+appear here.</string>
+                            <attributes>
+                                <color key="NSColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PVx-8Q-6Ke" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-88" id="LO2-Fk-Ef8"/>
+                <constraint firstItem="0RI-G5-0mt" firstAttribute="top" secondItem="u7A-tl-7qV" secondAttribute="bottom" constant="10" id="Lqp-TB-14t"/>
+                <constraint firstItem="PVx-8Q-6Ke" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TI3-gN-cYB"/>
+                <constraint firstItem="0RI-G5-0mt" firstAttribute="centerX" secondItem="u7A-tl-7qV" secondAttribute="centerX" id="Wei-Wa-Xk3"/>
+                <constraint firstItem="u7A-tl-7qV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eMs-GF-RHe"/>
+                <constraint firstItem="u7A-tl-7qV" firstAttribute="top" secondItem="PVx-8Q-6Ke" secondAttribute="bottom" constant="73.5" id="g7U-TG-wWB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="WZm-iG-yPR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" image="robot_groups" translatesAutoresizingMaskIntoConstraints="NO" id="MuU-0U-g90">
+                    <rect key="frame" x="130.5" y="169" width="128" height="153"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="153" id="e2b-9a-qwV"/>
+                        <constraint firstAttribute="width" secondItem="MuU-0U-g90" secondAttribute="height" multiplier="177:211" id="mMO-3q-6e9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No groups." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9k-dH-OM7">
+                    <rect key="frame" x="146.5" y="395.5" width="82" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-D6-hsn">
+                    <rect key="frame" x="60.5" y="425.5" width="254" height="36"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Group will generate automatically when
+you join a game.</string>
+                            <attributes>
+                                <color key="NSColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="m9k-dH-OM7" firstAttribute="top" secondItem="MuU-0U-g90" secondAttribute="bottom" constant="73.5" id="4cU-mY-MWH"/>
+                <constraint firstItem="MuU-0U-g90" firstAttribute="centerY" secondItem="WZm-iG-yPR" secondAttribute="centerY" constant="-88" id="830-7L-Nhg"/>
+                <constraint firstItem="m9k-dH-OM7" firstAttribute="centerX" secondItem="WZm-iG-yPR" secondAttribute="centerX" id="Bdc-FJ-QWP"/>
+                <constraint firstItem="qgW-D6-hsn" firstAttribute="centerX" secondItem="m9k-dH-OM7" secondAttribute="centerX" id="GHK-DF-pxy"/>
+                <constraint firstItem="MuU-0U-g90" firstAttribute="centerX" secondItem="WZm-iG-yPR" secondAttribute="centerX" constant="7" id="MTr-sk-mtP"/>
+                <constraint firstItem="qgW-D6-hsn" firstAttribute="top" secondItem="m9k-dH-OM7" secondAttribute="bottom" constant="10" id="jMi-BT-0sA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="33.5" y="775.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="lFq-kH-vLD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="robot_message" translatesAutoresizingMaskIntoConstraints="NO" id="rz8-SV-f7n">
+                    <rect key="frame" x="128.5" y="169" width="150" height="153"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rz8-SV-f7n" secondAttribute="height" multiplier="353:359" id="VaJ-Rf-VD0"/>
+                        <constraint firstAttribute="height" constant="153" id="xcF-6j-1YH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No message." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tar-6l-13l">
+                    <rect key="frame" x="139" y="395.5" width="97" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nV8-rc-toj">
+                    <rect key="frame" x="63" y="425.5" width="249" height="55"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">You and your friend direct
+messages will be displayed here</string>
+                            <attributes>
+                                <color key="NSColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=",">
+                            <attributes>
+                                <color key="NSColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> don't
+be shy. find they talk!</string>
+                            <attributes>
+                                <color key="NSColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tar-6l-13l" firstAttribute="centerX" secondItem="lFq-kH-vLD" secondAttribute="centerX" id="EPS-JI-Hti"/>
+                <constraint firstItem="rz8-SV-f7n" firstAttribute="centerY" secondItem="lFq-kH-vLD" secondAttribute="centerY" constant="-88" id="XG5-PS-yYn"/>
+                <constraint firstItem="nV8-rc-toj" firstAttribute="top" secondItem="Tar-6l-13l" secondAttribute="bottom" constant="10" id="Zk1-Qj-901"/>
+                <constraint firstItem="Tar-6l-13l" firstAttribute="top" secondItem="rz8-SV-f7n" secondAttribute="bottom" constant="73.5" id="dcl-nH-6Oz"/>
+                <constraint firstItem="rz8-SV-f7n" firstAttribute="centerX" secondItem="lFq-kH-vLD" secondAttribute="centerX" constant="16" id="v9b-At-ajs"/>
+                <constraint firstItem="nV8-rc-toj" firstAttribute="centerX" secondItem="Tar-6l-13l" secondAttribute="centerX" id="yAx-cM-UJk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="34" y="1496"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="robot_groups" width="177" height="211"/>
+        <image name="robot_message" width="353" height="359"/>
+        <image name="robot_notifications" width="228" height="175"/>
+    </resources>
+</document>

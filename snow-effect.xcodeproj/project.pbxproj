@@ -12,6 +12,14 @@
 		ED1986121E62DF1900552315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1986101E62DF1900552315 /* Main.storyboard */; };
 		ED1986141E62DF1900552315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1986131E62DF1900552315 /* Assets.xcassets */; };
 		ED1986171E62DF1900552315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1986151E62DF1900552315 /* LaunchScreen.storyboard */; };
+		ED19861F1E62E0C100552315 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED19861E1E62E0C100552315 /* ActivityView.xib */; };
+		ED1986231E62E83800552315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19860C1E62DF1900552315 /* AppDelegate.swift */; };
+		ED1986261E62E83800552315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1986151E62DF1900552315 /* LaunchScreen.storyboard */; };
+		ED1986271E62E83800552315 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED19861E1E62E0C100552315 /* ActivityView.xib */; };
+		ED1986281E62E83800552315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1986131E62DF1900552315 /* Assets.xcassets */; };
+		ED1986291E62E83800552315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1986101E62DF1900552315 /* Main.storyboard */; };
+		ED1986341E62E93E00552315 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1986331E62E93E00552315 /* ViewController.m */; };
+		ED1986381E62E9EA00552315 /* Main-oc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1986371E62E9EA00552315 /* Main-oc.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +30,24 @@
 		ED1986131E62DF1900552315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1986161E62DF1900552315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1986181E62DF1900552315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED19861E1E62E0C100552315 /* ActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		ED19862D1E62E83800552315 /* snow-effect-oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snow-effect-oc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED19862E1E62E83900552315 /* snow-effect-oc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "snow-effect-oc-Info.plist"; path = "/Users/Jamin/Developer/snow-effect/snow-effect-oc-Info.plist"; sourceTree = "<absolute>"; };
+		ED1986311E62E93E00552315 /* snow-effect-oc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "snow-effect-oc-Bridging-Header.h"; path = "snow-effect/snow-effect-oc-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED1986321E62E93E00552315 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "snow-effect/ViewController.h"; sourceTree = "<group>"; };
+		ED1986331E62E93E00552315 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "snow-effect/ViewController.m"; sourceTree = "<group>"; };
+		ED1986371E62E9EA00552315 /* Main-oc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-oc.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ED1986061E62DF1900552315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1986241E62E83800552315 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				ED19860B1E62DF1900552315 /* snow-effect */,
+				ED1986351E62E95600552315 /* snow-effect-oc */,
 				ED19860A1E62DF1900552315 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				ED1986091E62DF1900552315 /* snow-effect.app */,
+				ED19862D1E62E83800552315 /* snow-effect-oc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +80,25 @@
 			children = (
 				ED19860C1E62DF1900552315 /* AppDelegate.swift */,
 				ED19860E1E62DF1900552315 /* ViewController.swift */,
+				ED19861E1E62E0C100552315 /* ActivityView.xib */,
 				ED1986101E62DF1900552315 /* Main.storyboard */,
 				ED1986131E62DF1900552315 /* Assets.xcassets */,
 				ED1986151E62DF1900552315 /* LaunchScreen.storyboard */,
 				ED1986181E62DF1900552315 /* Info.plist */,
 			);
 			path = "snow-effect";
+			sourceTree = "<group>";
+		};
+		ED1986351E62E95600552315 /* snow-effect-oc */ = {
+			isa = PBXGroup;
+			children = (
+				ED1986321E62E93E00552315 /* ViewController.h */,
+				ED1986331E62E93E00552315 /* ViewController.m */,
+				ED1986371E62E9EA00552315 /* Main-oc.storyboard */,
+				ED19862E1E62E83900552315 /* snow-effect-oc-Info.plist */,
+				ED1986311E62E93E00552315 /* snow-effect-oc-Bridging-Header.h */,
+			);
+			name = "snow-effect-oc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +121,23 @@
 			productReference = ED1986091E62DF1900552315 /* snow-effect.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED1986201E62E83800552315 /* snow-effect-oc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED19862A1E62E83800552315 /* Build configuration list for PBXNativeTarget "snow-effect-oc" */;
+			buildPhases = (
+				ED1986211E62E83800552315 /* Sources */,
+				ED1986241E62E83800552315 /* Frameworks */,
+				ED1986251E62E83800552315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "snow-effect-oc";
+			productName = "snow-effect";
+			productReference = ED19862D1E62E83800552315 /* snow-effect-oc.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +152,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RVRG597GCP;
 						ProvisioningStyle = Automatic;
+					};
+					ED1986201E62E83800552315 = {
+						DevelopmentTeam = RVRG597GCP;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -115,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				ED1986081E62DF1900552315 /* snow-effect */,
+				ED1986201E62E83800552315 /* snow-effect-oc */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +184,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1986171E62DF1900552315 /* LaunchScreen.storyboard in Resources */,
+				ED19861F1E62E0C100552315 /* ActivityView.xib in Resources */,
 				ED1986141E62DF1900552315 /* Assets.xcassets in Resources */,
 				ED1986121E62DF1900552315 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1986251E62E83800552315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1986261E62E83800552315 /* LaunchScreen.storyboard in Resources */,
+				ED1986381E62E9EA00552315 /* Main-oc.storyboard in Resources */,
+				ED1986271E62E83800552315 /* ActivityView.xib in Resources */,
+				ED1986281E62E83800552315 /* Assets.xcassets in Resources */,
+				ED1986291E62E83800552315 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +211,15 @@
 			files = (
 				ED19860F1E62DF1900552315 /* ViewController.swift in Sources */,
 				ED19860D1E62DF1900552315 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1986211E62E83800552315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1986341E62E93E00552315 /* ViewController.m in Sources */,
+				ED1986231E62E83800552315 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -281,6 +362,37 @@
 			};
 			name = Release;
 		};
+		ED19862B1E62E83800552315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = RVRG597GCP;
+				INFOPLIST_FILE = "snow-effect-oc-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.tomorning.snow-effect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "snow-effect/snow-effect-oc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ED19862C1E62E83800552315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = RVRG597GCP;
+				INFOPLIST_FILE = "snow-effect-oc-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.tomorning.snow-effect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "snow-effect/snow-effect-oc-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +410,15 @@
 			buildConfigurations = (
 				ED19861C1E62DF1900552315 /* Debug */,
 				ED19861D1E62DF1900552315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED19862A1E62E83800552315 /* Build configuration list for PBXNativeTarget "snow-effect-oc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED19862B1E62E83800552315 /* Debug */,
+				ED19862C1E62E83800552315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
