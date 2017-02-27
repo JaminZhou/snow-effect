@@ -101,7 +101,7 @@
     for (int i=0; i<3; i++) {
         UIView *view = [[NSBundle mainBundle] loadNibNamed:@"ActivityView" owner:self options:nil][i];
         CGRect rect = scrollView.bounds;
-        rect.origin.x = i*CGRectGetWidth(view.frame);
+        rect.origin.x = i*CGRectGetWidth(scrollView.frame);
         view.frame = rect;
         [scrollView addSubview:view];
         

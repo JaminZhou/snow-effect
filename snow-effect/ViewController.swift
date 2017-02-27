@@ -95,7 +95,7 @@ class ViewController: UIViewController {
         for i in 0...2 {
             let view = Bundle.main.loadNibNamed("ActivityView", owner: self, options: nil)![i] as! UIView
             view.frame = scrollView.bounds
-            view.frame.origin.x = CGFloat(i)*view.frame.width
+            view.frame.origin.x = CGFloat(i)*scrollView.frame.width
             scrollView.addSubview(view)
             
             if (i == 1) {addSnowEffect(view.viewWithTag(1)!)}
