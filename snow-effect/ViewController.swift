@@ -55,10 +55,10 @@ class ViewController: UIViewController {
             button.tag = i+1
             button.addTarget(self, action: #selector(tapSegmentButton(_:)), for: .touchUpInside)
             backView.addSubview(button)
-            let normal = [NSFontAttributeName: UIFont.systemFont(ofSize: 13, weight: UIFontWeightMedium),
-                          NSForegroundColorAttributeName: UIColor(red: 78/255, green: 86/255, blue: 101/255, alpha: 1)]
-            let select = [NSFontAttributeName: UIFont.systemFont(ofSize: 13, weight: UIFontWeightMedium),
-                          NSForegroundColorAttributeName: UIColor(red: 0, green: 141/255, blue: 237/255, alpha: 1)]
+            let normal = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.medium),
+                          NSAttributedString.Key.foregroundColor: UIColor(red: 78/255, green: 86/255, blue: 101/255, alpha: 1)]
+            let select = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.medium),
+                          NSAttributedString.Key.foregroundColor: UIColor(red: 0, green: 141/255, blue: 237/255, alpha: 1)]
             var title = ""
             switch i {
             case 0:
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
         emitter.frame = rect
         view.layer.addSublayer(emitter)
         
-        emitter.emitterShape = kCAEmitterLayerRectangle
+        emitter.emitterShape = .rectangle
         emitter.emitterPosition = CGPoint(x: rect.width/2, y: rect.height/2)
         emitter.emitterSize = rect.size
         
@@ -130,7 +130,7 @@ class ViewController: UIViewController {
         emitter.emitterCells = [cell]
     }
     
-    func tapSegmentButton(_ sender: UIButton) {
+    @objc func tapSegmentButton(_ sender: UIButton) {
         if currentIndex !=  sender.tag {
             UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseInOut, animations: {
                 self.pagingScrollView.contentOffset = CGPoint(x: self.KScreenWidth*(CGFloat(sender.tag)-1), y: 0)

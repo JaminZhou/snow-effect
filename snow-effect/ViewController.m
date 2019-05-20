@@ -143,7 +143,7 @@
                               delay:0.0
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{
-                             _pagingScrollView.contentOffset = CGPointMake(KScreenWidth*(sender.tag-1), 0);
+                             self.pagingScrollView.contentOffset = CGPointMake(KScreenWidth*(sender.tag-1), 0);
                          }
                          completion:^(BOOL finished) {
 
